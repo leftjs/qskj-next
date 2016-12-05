@@ -5,7 +5,7 @@ import React from 'react'
 import css from 'next/css'
 import Button from 'antd/lib/button'
 import generalCSS from '../utils/generalCSS'
-export default ({boxShadow = false}) => {
+export default ({boxShadow = true}) => {
   const styles = {
     container: {
       padding: '10px 0px',

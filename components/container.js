@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import Head from 'next/head'
-import * as utils from '../utils'
+import {antdCDN, isDev} from '../utils'
 
 export default ({ children }) => {
   return (
@@ -12,7 +12,7 @@ export default ({ children }) => {
          <title>青霜科技</title>
          <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
          {
-           !utils.isDev ? <link rel="stylesheet" href={utils.antdCDN}/> :
+           !isDev ? <link rel="stylesheet" href={antdCDN}/> :
            <link rel="stylesheet" href="/static/css/antd.css"/>
          }
          <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet" />

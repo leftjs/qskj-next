@@ -4,7 +4,6 @@
 import _ from 'lodash'
 import css from 'next/css'
 import * as colors from './colors'
-import Immutable from 'immutable'
 // 生成margin样式
 function generateMarginStyles() {
   let styles = {}
@@ -55,10 +54,12 @@ function generatePaddingStyles() {
       paddingBottom: range
     }
     styles[`pv${range}`] = {
-      padding: `${range}px 0`
+      paddingTop: range,
+      paddingBottom: range
     }
     styles[`ph${range}`] = {
-      padding: `0 ${range}px`
+      paddingLeft: range,
+      paddingRight: range
     }
   })
   return styles

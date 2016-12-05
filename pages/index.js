@@ -7,10 +7,11 @@ import Header from '../components/header'
 import Carousel from 'antd/lib/carousel'
 import Button from 'antd/lib/button'
 import generalCSS, {cssUtil as css} from '../utils/generalCSS'
+
 export default () => {
   return (
       <Container>
-        <Header/>
+        <Header boxShadow={false}/>
         
         <div className={css(generalCSS.dirRowJcAroundAiCenter, styles.toolBarContainer, generalCSS.pv5)}>
           <div className={css(generalCSS.dirRowJcCenterAiCenter)}>
